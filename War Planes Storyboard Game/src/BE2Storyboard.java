@@ -2,7 +2,7 @@
 public class BE2Storyboard
 	{
 
-		public static void main(String[] args)
+		public static void doStory()
 			{
 				introductionToStory();
 				firstDecision();
@@ -10,7 +10,6 @@ public class BE2Storyboard
 				thirdDecision();
 				fourthDecision();
 				ending();
-
 			}
 		
 		public static void introductionToStory()

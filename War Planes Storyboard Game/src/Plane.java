@@ -1,4 +1,4 @@
-public class Planes
+public class Plane
 	{
 		private String name;
 		private String wingSpan;
@@ -7,14 +7,15 @@ public class Planes
 		private String timePeriod;
 		private String sideOfTheWar;
 		
-		public Planes(String n, String w, String e, String wa, String t, String s)
+	
+		public Plane(String name, String wingSpan, String enginePower, String war, String timePeriod, String sideOfTheWar)
 		{
-			name = n;
-			wingSpan = w;
-			enginePower = e;
-			war = wa;
-			timePeriod = t;
-			sideOfTheWar = s;
+			this.name = name;
+			this.wingSpan = wingSpan;
+			this.enginePower = enginePower;
+			this.war = war;
+			this.timePeriod = timePeriod;
+			this.sideOfTheWar = sideOfTheWar;
 		}
 
 		public String getName()
@@ -77,6 +78,10 @@ public class Planes
 				this.sideOfTheWar = sideOfTheWar;
 			}
 		
+		@Override
+		public String toString() {
+			return ""; // TODO: add stats
+		}
+	
 		
-
 	}
