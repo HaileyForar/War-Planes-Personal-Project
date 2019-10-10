@@ -3,6 +3,7 @@ import java.util.Scanner;
 public class Storyboard
 	{
 	
+		//Initializing ArrayList of plane object
 		private static ArrayList<Plane> hangar = new ArrayList<Plane>();
 	
 		public static void main(String[] args)
@@ -10,7 +11,7 @@ public class Storyboard
 		    initializeHangar();
 			introduction();
 			printingArrayListOfPlanes();
-			userChosesPlane(); // pretend chose 1
+			userChosesPlane(); 
 			
 		}
 		
@@ -19,8 +20,8 @@ public class Storyboard
 		{
 			System.out.println("Welcome to Pick a Plane, a game of action and warfare.");
 			System.out.println("What is your name?");
-			Scanner userInput = new Scanner (System.in);
-			String name = userInput.nextLine();
+			Scanner stringInput = new Scanner (System.in);
+			String name = stringInput.nextLine();
 			
 			System.out.println("Hello " + name + ". The game is simple...");
 			System.out.println("In a minute, a list of planes from WWI, WWII, and modern-day military aircraft will pop-up.");
@@ -42,7 +43,33 @@ public class Storyboard
 		//the user choses which plane that they want
 		public static void userChosesPlane()
 		{
+			 System.out.println("Please enter either 1, 2, or 3.");
+			 Scanner intInput = new Scanner (System.in);
+			 int choice = intInput.nextInt();
 			
+			boolean storyRunning = true;
+			
+			while(storyRunning)
+			{
+				
+			if(choice == 1)
+				{
+					BE2Storyboard.doStory();
+					storyRunning = false;
+				}
+			
+			else if(choice == 2)
+				{
+					SuperfortressStoryboard.doStory();
+					storyRunning = false;
+				}
+			
+			else
+				{
+					SukhoiStoryboard.doStory();
+					storyRunning = false;
+				}
+			}
 		}
 		
 		public static void initializeHangar() {

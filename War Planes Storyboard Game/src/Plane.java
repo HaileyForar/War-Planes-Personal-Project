@@ -80,7 +80,7 @@ public class Plane
 		
 		@Override
 		public String toString() {
-			return ""; // TODO: add stats
+			return "{" + name + "," + wingSpan + "," + enginePower + "," + war + "," + timePeriod + "," + sideOfTheWar + "}"; // TODO: add stats
 		}
 	
 		
