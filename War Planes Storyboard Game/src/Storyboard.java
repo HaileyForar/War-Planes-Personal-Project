@@ -54,18 +54,21 @@ public class Storyboard
 				
 			if(choice == 1)
 				{
+					System.out.println(hangar.get(0));
 					BE2Storyboard.doStory();
 					storyRunning = false;
 				}
 			
 			else if(choice == 2)
 				{
+					System.out.println(hangar.get(3));
 					SuperfortressStoryboard.doStory();
 					storyRunning = false;
 				}
 			
 			else
 				{
+					System.out.println(hangar.get(6));
 					SukhoiStoryboard.doStory();
 					storyRunning = false;
 				}
