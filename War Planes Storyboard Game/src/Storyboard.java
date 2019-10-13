@@ -43,7 +43,7 @@ public class Storyboard
 		//the user choses which plane that they want
 		public static void userChosesPlane()
 		{
-			 System.out.println("Please enter either 1, 2, or 3.");
+			 System.out.println("Please enter the number next to the plane that you want to select.");
 			 Scanner intInput = new Scanner (System.in);
 			 int choice = intInput.nextInt();
 			
@@ -62,50 +62,56 @@ public class Storyboard
 			else if(choice == 2)
 				{
 					System.out.println(hangar.get(1));
-					SuperfortressStoryboard.doStory();
+					AlbatrosStoryboard.doStory();
 					storyRunning = false;
 				}
 			
 			else if(choice == 3)
 				{
 					System.out.println(hangar.get(2));
-					SukhoiStoryboard.doStory();
+					AEGStoryboard.doStory();
 					storyRunning = false;
 				}
 			
 			else if(choice == 4)
 			{
 				System.out.println(hangar.get(3));
+				SuperfortressStoryboard.doStory();
 				storyRunning = false;
 			}
 			
 			else if(choice == 5)
 			{
 				System.out.println(hangar.get(4));
+				MitsubishiA6MStoryboard.doStory();
 				storyRunning = false;
 			}
 			
 			else if(choice == 6)
 			{
 				System.out.println(hangar.get(5));
+				SupermarineStoryboard.doStory();
 				storyRunning = false;
 			}
 			
 			else if(choice == 7)
 			{
 				System.out.println(hangar.get(6));
+				SukhoiStoryboard.doStory();
 				storyRunning = false;
 			}
 			
 			else if(choice == 8)
 			{
 				System.out.println(hangar.get(7));
+				DouglasStoryboard.doStory();
 				storyRunning = false;
 			}
 			
 			else if(choice == 9)
 			{
 				System.out.println(hangar.get(8));
+				McDonnellStoryboard.doStory();
 				storyRunning = false;
 			}
 			

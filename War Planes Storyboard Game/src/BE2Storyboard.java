@@ -15,8 +15,27 @@ public class BE2Storyboard
 		//Introduces user to this part of the game
 		public static void introductionToStory()
 		{
+			System.out.println();
 			System.out.println("You have chosen the British B.E.2 Bomber!");
+			System.out.println();
 			
+			int timeDelay = 3;
+			System.out.print("LOADING");
+			try        
+			{
+				for(int i = 0; i < timeDelay; i++)
+				{
+			    Thread.sleep(1000);
+			    System.out.print(".");
+				}
+			} 
+			
+			catch(InterruptedException ie) 
+			{
+			    Thread.currentThread().interrupt();
+			}
+			
+		    System.out.println();
 			System.out.println("I guess you want to fight in World War I then? No? Well, you might want to buckle your seatbelt. It's going to be a wild ride.");
 			System.out.println("The year is 1916, right in the midst of the war. You are a pilot, the finest in the Royal Flying Corps (RFC).");
 			System.out.println("Now, being the best comes with many hard decisions. Are you ready?");
@@ -26,10 +45,28 @@ public class BE2Storyboard
 		//The first choice the user has to make
 		public static void firstDecision()
 		{
+			int timeDelay = 10;
+			System.out.print("FIRST CHOICE LOADING");
+			try        
+			{
+				for(int i = 0; i < timeDelay; i++)
+				{
+			    Thread.sleep(1000);
+			    System.out.print(".");
+				}
+			} 
+			
+			catch(InterruptedException ie) 
+			{
+			    Thread.currentThread().interrupt();
+			}
+			
+			System.out.println();
 			System.out.println("You are currently stationed outside London, and are getting ready to fly off to fight.");
 			System.out.println("Your commanding officer is ordering you to take off, but you know that your plane is not fit to fly at the moment.");
 			System.out.println("What do you do...");
 			System.out.println();
+			
 			System.out.println("1. Disobey orders and make sure that your plane is really good to go fly across to the German frontlines?");
 			System.out.println("2. Follow what your commanding officer says and take off anyway, because it isn't that bad?");
 			System.out.println();
@@ -67,6 +104,24 @@ public class BE2Storyboard
 		public static void secondDecision()
 		{
 			System.out.println();
+			
+			int timeDelay = 10;
+			System.out.print("SECOND CHOICE LOADING");
+			try        
+			{
+				for(int i = 0; i < timeDelay; i++)
+				{
+			    Thread.sleep(1000);
+			    System.out.print(".");
+				}
+			} 
+			
+			catch(InterruptedException ie) 
+			{
+			    Thread.currentThread().interrupt();
+			}
+			
+			System.out.println();
 			System.out.println("Alright Lieutenant, you are now across the Chanel. You had safe travels.");
 			System.out.println("Your crew is safe and even though your commanding officer was irritated with you, you did not get in trouble for making sure that your plane was okay.");
 			System.out.println("You have been staying at a base in the outskirts of Paris for a few days, and things have been pretty quiet.");
@@ -98,7 +153,7 @@ public class BE2Storyboard
 			else if(choice == 2)
 				{
 					System.out.println("Unfortunately you have a big heart Lieutenant, and it this case it was to your detriment.");
-					System.out.println("As a bomb fell, you hauled two members of the Air force under a cement bunker roof, but you were not able to get under in time.");
+					System.out.println("As a bomb fell, you hauled two members of the Air Force under a cement bunker roof, but you were not able to get under in time.");
 					System.out.println("Your leg is severely injured, and you can't feel your right arm.");
 					System.out.println("A few days later you die in the hospital due to infection and lack of proper medical tools and knowledge.");
 					System.out.println("GAME OVER.");
@@ -114,6 +169,24 @@ public class BE2Storyboard
 		//The third choice the user has to make
 		public static void thirdDecision()
 		{
+			System.out.println();
+			
+			int timeDelay = 10;
+			System.out.print("THIRD CHOICE LOADING");
+			try        
+			{
+				for(int i = 0; i < timeDelay; i++)
+				{
+			    Thread.sleep(1000);
+			    System.out.print(".");
+				}
+			} 
+			
+			catch(InterruptedException ie) 
+			{
+			    Thread.currentThread().interrupt();
+			}
+			
 			System.out.println();
 			System.out.println("The base is now more or less destroyed. Many of the planes that were set to take off the next day on a reconnaissance mission were left in shambles.");
 			System.out.println("Another small problem is that one of the main fuel lines that supplied all the aircraft and vehicles with fuel was broken, and that in and of itself caused a massive explosion.");
@@ -154,12 +227,31 @@ public class BE2Storyboard
 		//The fourth choice the user has to make
 		public static void fourthDecision()
 		{
+			System.out.println();
+			
+			int timeDelay = 10;
+			System.out.print("LAST CHOICE LOADING");
+			try        
+			{
+				for(int i = 0; i < timeDelay; i++)
+				{
+			    Thread.sleep(1000);
+			    System.out.print(".");
+				}
+			} 
+			
+			catch(InterruptedException ie) 
+			{
+			    Thread.currentThread().interrupt();
+			}
+			
+			System.out.println();
 			System.out.println("Your crew and whomever was left on your home base has now been relocated to this base.");
 			System.out.println("Now Lieutenant, you have one more choice.");
 			System.out.println();
 			System.out.println("Since your base was decimated, there are very few planes left in France, so you have been recruited for another job.");
 			System.out.println("During your training you were extremely good at undercover work, so here is a proposition...");
-			System.out.println("We need someone to sneak through the city and get this letter with German plans on it to a agent who will be waiting along the single road out of Paris.");
+			System.out.println("We need someone to sneak through the city and get this letter with German plans on it to an agent who will be waiting along the single road out of Paris.");
 			System.out.println("All you have to do is get this letter to him and he will know what to do.");
 			System.out.println("What do you do?");
 			System.out.println();
@@ -194,8 +286,6 @@ public class BE2Storyboard
 			}
 
 		}
-		
-		
 		
 
 	}

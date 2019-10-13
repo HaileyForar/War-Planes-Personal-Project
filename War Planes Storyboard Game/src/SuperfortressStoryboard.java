@@ -15,9 +15,29 @@ public class SuperfortressStoryboard
 		//Introduces user to this part of the game
 		public static void introductionToStory()
 		{
-			System.out.println("You have chosen the B-29 Superfortress!");
+			System.out.println();
+			System.out.println("You have chosen the American B-29 Superfortress!");
+			System.out.println();
+			
+			int timeDelay = 3;
+			System.out.print("LOADING");
+			try        
+			{
+				for(int i = 0; i < timeDelay; i++)
+				{
+			    Thread.sleep(1000);
+			    System.out.print(".");
+				}
+			} 
+			
+			catch(InterruptedException ie) 
+			{
+			    Thread.currentThread().interrupt();
+			}
+			
+			System.out.println();
 			System.out.println("I guess you want to fight in World War II then? No? Well, you might want to buckle your seatbelt. It's going to be a wild ride.");
-			System.out.println("The year is 1916, right in the midst of the war. You are a pilot, the finest in the United States Air Force (USAF).");
+			System.out.println("The year is 1942, right in the midst of the war. You are a pilot, the finest in the United States Air Force (USAF).");
 			System.out.println("Now, being the best comes with many hard decisions. Are you ready?");
 			System.out.println();
 		}
@@ -25,6 +45,23 @@ public class SuperfortressStoryboard
 		//The first choice the user has to make
 		public static void firstDecision()
 		{
+			int timeDelay = 10;
+			System.out.print("FIRST CHOICE LOADING");
+			try        
+			{
+				for(int i = 0; i < timeDelay; i++)
+				{
+			    Thread.sleep(1000);
+			    System.out.print(".");
+				}
+			} 
+			
+			catch(InterruptedException ie) 
+			{
+			    Thread.currentThread().interrupt();
+			}
+			
+			System.out.println();
 			System.out.println("You are currently stationed in Hawaii, Pearl Harbor, and are getting ready to fly off to fight.");
 			System.out.println("Your commanding officer is ordering you to take off, but you know that your plane is not fit to fly at the moment.");
 			System.out.println("What do you do...");
@@ -65,13 +102,32 @@ public class SuperfortressStoryboard
 		//The second choice the user has to make
 		public static void secondDecision()
 		{
+			System.out.println();
+			
+			int timeDelay = 10;
+			System.out.print("SECOND CHOICE LOADING");
+			try        
+			{
+				for(int i = 0; i < timeDelay; i++)
+				{
+			    Thread.sleep(1000);
+			    System.out.print(".");
+				}
+			} 
+			
+			catch(InterruptedException ie) 
+			{
+			    Thread.currentThread().interrupt();
+			}
+			
+			System.out.println();
 			System.out.println("Alright Lieutenant, you are now across the ocean. You had safe travels.");
 			System.out.println("Your crew is safe and even though your commanding officer was irritated with you, you did not get in trouble for making sure that your plane was okay.");
-			System.out.println("You have been staying at a base in the outskirts of Paris for a few days, and things have been pretty quiet.");
+			System.out.println("You have been staying at a base in the Phillipeans for a few days, and things have been pretty quiet.");
 			System.out.println("All that is about to change...");
 			System.out.println();
 			System.out.println("It was a normal day, warm even despite the usually cold weather of winter, then you hear the sound of planes overhead.");
-			System.out.println("Through looking up, you can't see the planes overhead, but you can see the insignia on the side, and your heart drops as you realize it is a German Squadron.");
+			System.out.println("Through looking up, you can't see the planes overhead, but you can see the insignia on the side, and your heart drops as you realize it is a Japanese Squadron.");
 			System.out.println("There was no time to sound the air-raid sirens as the bombs started to drop, and people started to run every direction, trying desperately to find any cover that they could.");
 			System.out.println("What do you do...");
 			System.out.println();
@@ -112,9 +168,28 @@ public class SuperfortressStoryboard
 		//The third choice the user has to make
 		public static void thirdDecision()
 		{
+			System.out.println();
+			
+			int timeDelay = 10;
+			System.out.print("THIRD CHOICE LOADING");
+			try        
+			{
+				for(int i = 0; i < timeDelay; i++)
+				{
+			    Thread.sleep(1000);
+			    System.out.print(".");
+				}
+			} 
+			
+			catch(InterruptedException ie) 
+			{
+			    Thread.currentThread().interrupt();
+			}
+			
+			System.out.println();
 			System.out.println("The base is now more or less destroyed. Many of the planes that were set to take off the next day on a reconnaissance mission were left in shambles.");
 			System.out.println("Another small problem is that one of the main fuel lines that supplied all the aircraft and vehicles with fuel was broken, and that in and of itself caused a massive explosion.");
-			System.out.println("One of the only things to do is take a convoy and try to connect with another base through Paris and out the other side.");
+			System.out.println("One of the only things to do is take a convoy and try to connect with another base through the island on the far side.");
 			System.out.println("It is an extremely dangerous mission and it would take at least a day and a half to get there and back.");
 			System.out.println("You have a choice...");
 			System.out.println("1. You can go with the convoy and connect with the other base, thus staying in the loop of what is happening and you are able to help your fellow men.");
@@ -150,12 +225,30 @@ public class SuperfortressStoryboard
 		//The fourth choice the user has to make
 		public static void fourthDecision()
 		{
+			System.out.println();
+			
+			int timeDelay = 10;
+			System.out.print("FOURTH CHOICE LOADING");
+			try        
+			{
+				for(int i = 0; i < timeDelay; i++)
+				{
+			    Thread.sleep(1000);
+			    System.out.print(".");
+				}
+			} 
+			
+			catch(InterruptedException ie) 
+			{
+			    Thread.currentThread().interrupt();
+			}
+			
+			System.out.println();
 			System.out.println("Your crew and whomever was left on your home base has now been relocated to this base.");
 			System.out.println("Now Lieutenant, you have one more choice.");
-			System.out.println("Since your base was decimated, there are very few planes left in France, so you have been recruited for another job.");
+			System.out.println("Since your base was decimated, there are very few planes left on the island, so you have been recruited for another job.");
 			System.out.println("During your training you were extremely good at undercover work, so here is a proposition...");
-			System.out.println("We need someone to sneak through the city and get this letter with German plans on it to a agent who will be waiting along the single road out of Paris.");
-			System.out.println("All you have to do is get this letter to him and he will know what to do.");
+			System.out.println("We need someone to fly an undercover mission to Pearl Harbor and get a letter to the head over there. They will know what to do from there.");
 			System.out.println("What do you do?");
 			System.out.println("1. Do you agree to take the job, and put your skills to the test?");
 			System.out.println("2. Or do you stay at the base and let someone with more guts take over?");
@@ -169,7 +262,7 @@ public class SuperfortressStoryboard
 				
 			if(choice == 1)
 				{
-					System.out.println("It looks like your efforts payed off Lieutenant. We were able to thwart a massive German attack and it looks like the end of The Great War is nigh.");
+					System.out.println("It looks like your efforts payed off Lieutenant. We were able to thwart a massive Japenese attack and it looks like the end of The Great War is nigh.");
 					System.out.println();
 					System.out.println("Congradulations, you made it to the end of WWI, and earned your wings in the Royal Flying Corps.");
 					System.out.println("We salute your courage and valor in the midst of the storm.");
